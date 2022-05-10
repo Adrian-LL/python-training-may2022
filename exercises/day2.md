@@ -9,10 +9,26 @@
  Define a variable called `speed` and assign an integer value to it. 
  After running the program once, change its value and notice the changed output.
  
-2. Write a Python program which iterates the integers from 1 to 50. 
- For multiples of three print `"Fizz"` instead of the number and for the 
- multiples of five print `"Buzz"`. For numbers which are multiples of both three
- and five print `"FizzBuzz"`. If the number 30 is encountered, break the loop.
+2. Write a Python program which iterates the integers from 1 to 50 and outputs 
+their values. For multiples of three print `"Fizz"` instead of the number and 
+for multiples of five print `"Buzz"`. For numbers which are multiples of both 
+three and five print `"FizzBuzz"`. 
+If the number 30 is encountered, break the loop.
+
+Example output:
+```
+1
+2
+Fizz
+4
+Buzz 
+[...]
+13
+14
+FizzBuzz
+16
+[...]
+```
 
 3. Write a Python program to reverse a number.
 4. Write a Python program to display the first 7 multiples of 7.
