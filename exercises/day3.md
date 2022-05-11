@@ -52,10 +52,10 @@ The function will receive 2 parameters – tag type and tag content and will ret
     E.g.: `f('b', 'Ham&Eggs')` returns `"<b>Ham&amp;Eggs</b>"`
     
     HTML char escaping:
-    * `<` becomes `&lt`;
-    * `>` becomes `&gt`;
-    * `"` becomes `&quot`;
-    * `&` becomes `&amp`;
+    * `<` becomes `&lt;`
+    * `>` becomes `&gt;`
+    * `"` becomes `&quot;`
+    * `&` becomes `&amp;`
 
 ### Modules and packages exercises
 1. Create a Python package with a module in it where you place one of the functions defined above.
