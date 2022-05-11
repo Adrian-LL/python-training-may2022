@@ -44,5 +44,3 @@ print("My name is", name.capitalize(), "and I am", age, "years old.")
 message = f"My name is {name.capitalize()} and I am {age + 100} years old."
 print(message)
 print('Age is unchanged:', age)
-
-
