@@ -23,8 +23,10 @@ print(square_sum)
 # Write a function that takes any number of strings and an integer n as
 # parameters. n should be an optional parameter. Return the list of strings
 # longer than n. By default, it should return a list containing all words
-def filter_long_words(*words, min_length=-1):
-    # long_words = [word for word in words if len(word) > min_length]
+def filter_long_words(*words, min_length=None):
+    if min_length is None:
+        return list(words)
+
     long_words = []
     for word in words:
         if len(word) > min_length:
