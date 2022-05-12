@@ -4,6 +4,7 @@ from datetime import date
 # instance == object -> instanță -> concret
 # method -> function defined inside a class
 
+
 class Person:
     count = 0  # class attribute
 
@@ -33,6 +34,19 @@ class Person:
         return f'Name is {self.name}; Age is {self.age}'
 
 
+class Student(Person):
+    def __init__(self, *args, **kwargs):
+        self.university = kwargs.pop('university', None)
+        super().__init__(*args, **kwargs)
+
+    def __str__(self):  # overwrite method from parent
+        return f'Student {self.name} at {self.university}'
+
+    @staticmethod
+    def has_scholarship(self):  # add extra method
+        return True
+
+
 if __name__ == '__main__':
     print('Person count:', Person.count)
 
@@ -58,3 +72,7 @@ if __name__ == '__main__':
     print(x.name)  # get
     x.name = 'Andreea'  # set
     del x.name  # delete
+
+    s = Student('Dana', date(1997, 2, 3), university="Poli")
+    print(s)
+    s.say("Bună")
