@@ -8,10 +8,10 @@
     * `bank account (BankAccount)`
     * `salary (default 0) (int)`
 
-    1. Use a `property` for salary management. Salary should be set only on initialisation; you shouldn't be able to set the salary from outside the class.
     1. Write a method `raise_salary` that receives a parameter `percent` that should be one of the following values: 5, 10, 20. Raise a `ValueError` if another value is received by this method.
     The `raise_salary` method should raise the salary with 5%, 10% or 20%.
     1. Create a method `receive_salary` that will deposit in the employee's bank account an amount equal to its salary.
+    1. Use a `property` for salary management. Salary should be set only on initialisation; you shouldn't be able to set the salary from outside the class.
 
 1. Create a `CreditBankAccount` class inherits `BankAccount` and receives one extra argument at initialisation which allows for the balance to go below zero (but not under `-overdraft`): 
     * `overdraft (int)`
