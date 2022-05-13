@@ -74,3 +74,5 @@ before the usual prompt).
 
 ### Contact
 Iulia Chiriac <iulia.chiriac.a@gmail.com>
+
+Feedback form: https://forms.gle/EDt9Gk6LYVBezApX7
